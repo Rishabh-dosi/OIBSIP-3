@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #751af6;
+}
+.toDo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background-image: linear-gradient(right to left , #4b0ba4 , #5f0ff2);
+}
+.pushItem {
+    margin-bottom: 0rem;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(102, 225, 241) , #2d2fa6);
+    border-radius: 30px;
+}
+.heading:first-of-type{
+    margin-left: 4rem;
+    
+}
+
+.heading {
+    color: rgb(251, 0, 255);
+    font-family: 'Kalam', cursive;
+    background-color: rgb(251, 214, 158);
+    height: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 2rem;
+    top: 2.60000018rem;
+}
+
+.pushItem input {
+    margin-top: 5rem;
+    height: 2.6rem;
+    width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+}
+input::placeholder{
+    font-size: 1rem;
+}
+.pushItem button {
+    margin-top: 5rem;
+    height: 2.6rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #2d2fa6;
+    margin-left: -2rem;
+}
+.list {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(60, 51, 51);
+    color: white;
+    border-radius: 20px;
+}
+.Item {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(54, 198, 162);
+    color: white;
+    margin: 2rem;
+    height: 3rem;
+    font-family: 'Kalam', cursive;
+    font-size: 1.5rem;
+    padding: 9px;
+}
+.doneBtn{
+    color: rgb(66, 17, 17);
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+}
+.deletedList{
+    width: 500px;
+    height: 700px;
+    background-color: rgb(62, 46, 46);
+    margin: auto 7rem auto 2rem;
+    border-radius: 3rem;
+    margin: 10rem;
+}
+.deletedList>div{
+    background-color: aquamarine;
+    width: 80%;
+    font-size: 2rem;
+    font-family: 'Kalam', cursive;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 3px;
+}
